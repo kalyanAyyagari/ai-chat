@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #1a1f71; // Dark Blue
+  --secondary-color: #0d1b2a; // Darker Blue
+  --accent-color: #3a506b; // Blue with a hint of grey
+  --background-color-light: #f0f4f8; // Light Greyish Blue for Light Mode
+  --background-color-dark: #1b263b; // Darker Blue for Dark Mode (future use)
+  --text-color-light: #2e3440; // Dark Grey for Light Mode
+  --text-color-dark: #d8dee9; // Light Grey for Dark Mode (future use)
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+}
+

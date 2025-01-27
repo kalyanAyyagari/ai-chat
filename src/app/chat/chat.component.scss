@@ -1,0 +1,33 @@
+
+
+.chat-container {
+  width: max(50vw, 400px);
+  margin: auto;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 8px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.user {
+  text-align: right;
+}
+
+.ai {
+  text-align: left;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+}

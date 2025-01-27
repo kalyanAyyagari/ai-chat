@@ -1,0 +1,12 @@
+<div class="chat-container">
+  <div class="chat-box">
+    @for (message of messages(); track $index) {
+      <div class="message"
+      [class]="{'user': message.role === 'user', 'ai': message.role === 'assistant'}">
+        {{ message.content }}
+      </div>
+    }
+  </div>
+  <input id="userInput" [(ngModel)]="userInput" (keyup.enter)="sendMessage()" placeholder="Type a message..."
+   class="chat-input"/>
+</div>
