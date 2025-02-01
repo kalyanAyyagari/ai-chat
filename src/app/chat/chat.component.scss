@@ -8,7 +8,6 @@
 }
 
 .chat-box {
-  max-height: 300px;
   overflow-y: auto;
 }
 
@@ -24,10 +23,56 @@
 
 .ai {
   text-align: left;
+  white-space: break-spaces;
 }
 
 .chat-input {
   width: 100%;
   padding: 8px;
   border-radius: 4px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+option {
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+option:hover {
+  background-color: #f2f2f2;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.send-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #3e8e41;
 }
