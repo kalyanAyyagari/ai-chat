@@ -1,5 +1,5 @@
 <div class="chat-container" style="height: calc(100vh - 100px);">
-  <div class="chat-box" style="overflow-y: auto; height: calc(100% - 10px);">
+  <div class="chat-box scroll" style="height: calc(100% - 10px);">
     @for (message of messages(); track $index) {
       <div class="message"
       [class]="{'user': message.role === 'user', 'ai': message.role === 'assistant'}">

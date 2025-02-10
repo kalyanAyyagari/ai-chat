@@ -1,6 +1,5 @@
 import { Component, signal, WritableSignal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { of } from 'rxjs';
 
 @Component({
   selector: 'app-chat',
